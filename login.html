@@ -52,4 +52,16 @@
             <button type="submit">Login</button>
         </form>
     </div>  </body>
+    //create a script to handle the login form submission and display an alert with the entered username and password
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        const username = document.querySelector('input[name="username"]').value;
+        const password = document.querySelector('input[name="password"]').value;
+
+        alert(`Username: ${username}\nPassword: ${password}`);
+    }); </script>     
 </html> 
+
+                          
